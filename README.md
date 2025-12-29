@@ -1,12 +1,12 @@
 # Movie Recommender System
 
-Content-Based Movie Recommendation using Python, Machine Learning, and Streamlit
+ Movie Recommendation System Project using Python, Machine Learning, and Streamlit
 
 ---
 
 ## Project Summary
 
-This project is a **Content-Based Movie Recommender System** that suggests movies similar to a user-selected title based on textual features such as genres, keywords, overview, cast, and crew.  
+This project is a **Movie Recommender System** that suggests movies similar to a user-selected title based on textual features such as genres, keywords, overview, cast, and crew.  
 The system uses **Natural Language Processing (NLP)** techniques and **cosine similarity** to compute similarity scores between movies.
 
 An interactive **Streamlit web application** is built to allow users to select a movie and instantly receive recommendations along with movie posters fetched via the **TMDB API**.
@@ -154,30 +154,58 @@ def fetch_poster(movie_id):
 ## 8. How to Run the Project
 
 #### Step 1: Clone the Repository
-```python
+```bash
 git clone https://github.com/your-username/movie-recommender-system.git
 ```
 
+#### Step 2: Install Dependencies
 ```python
-
+pip install -r requirements.txt
 ```
 
+#### Step 3: Add TMDB API Key
 ```python
-
+API_KEY = "your_tmdb_api_key"
 ```
 
+#### Step 4: Run the Application
 ```python
-
+streamlit run app.py
 ```
 
+#### Application runs at:
 ```python
-
+http://localhost:8501
 ```
 
-```python
+---
 
-```
+## 9. Future Enhancements
 
+- Add collaborative filtering
+- Include user ratings
+- Improve NLP with TF-IDF or embeddings
+- Deploy on cloud platforms
+- Add advanced filtering options
+
+---
+
+## 10. Project Outcome
+
+### This project demonstrates a complete end-to-end recommendation system, including:
+
+- Data preprocessing and feature engineering
+- NLP-based similarity modeling
+- Machine learning integration
+- API usage (TMDB)
+- Interactive web application using Streamlit
+
+### Key Outcomes
+
+- Personalized movie recommendations
+- Practical NLP implementation
+- Real-world ML application
+- Strong portfolio project for Data Analyst / ML roles
 
 
 
